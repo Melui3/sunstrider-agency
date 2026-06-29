@@ -2,6 +2,10 @@
 
 Portail institutionnel fictif du Royaume de Quel'Thalas, construit avec Vite, React et Tailwind CSS.
 
+## Site publié
+
+https://melui3.github.io/sunstrider-agency/
+
 ## Lancer le projet
 
 ```bash
@@ -23,4 +27,3 @@ npm run build
 - React
 - Tailwind CSS
 - lucide-react
-

@@ -426,16 +426,32 @@ const homeSections = [
   },
 ];
 
+const appBasePath = import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL.replace(/\/$/, "");
+
 function normalizePath(pathname) {
   const cleanPath = pathname.replace(/\/+$/, "");
   return cleanPath || "/";
 }
 
+function routeFromBrowserPath(pathname) {
+  if (appBasePath && (pathname === appBasePath || pathname.startsWith(`${appBasePath}/`))) {
+    return normalizePath(pathname.slice(appBasePath.length) || "/");
+  }
+
+  return normalizePath(pathname);
+}
+
+function browserPathFromRoute(pathname) {
+  const routePath = normalizePath(pathname);
+  if (!appBasePath) return routePath;
+  return routePath === "/" ? `${appBasePath}/` : `${appBasePath}${routePath}`;
+}
+
 function useRoute() {
-  const [path, setPath] = useState(() => normalizePath(window.location.pathname));
+  const [path, setPath] = useState(() => routeFromBrowserPath(window.location.pathname));
 
   useEffect(() => {
-    const onPopState = () => setPath(normalizePath(window.location.pathname));
+    const onPopState = () => setPath(routeFromBrowserPath(window.location.pathname));
     window.addEventListener("popstate", onPopState);
     return () => window.removeEventListener("popstate", onPopState);
   }, []);
@@ -446,9 +462,9 @@ function useRoute() {
       return;
     }
 
-    const nextPath = normalizePath(href);
-    if (nextPath !== normalizePath(window.location.pathname)) {
-      window.history.pushState({}, "", nextPath);
+    const nextPath = routeFromBrowserPath(href);
+    if (nextPath !== routeFromBrowserPath(window.location.pathname)) {
+      window.history.pushState({}, "", browserPathFromRoute(nextPath));
       setPath(nextPath);
     }
     window.scrollTo({ top: 0, behavior: "smooth" });
