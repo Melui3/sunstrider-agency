@@ -1,0 +1,22 @@
+{
+  "tool": "Built-in image_gen",
+  "generated": "2026-10-07",
+  "assets": [
+    {
+      "file": "assets/silvermoon.webp",
+      "prompt": "Use case: stylized-concept. Create a cinematic wide 3:2 environment illustration for a premium French Warcraft lore website. Silvermoon City, Quel'Thalas, recognizable blood elf architectural language: elegant curved ivory towers, sweeping gold finials, huge crimson silk banners with abstract phoenix emblems, floating pale turquoise arcane crystals, autumn golden trees, a sunlit elevated avenue leading towards distant towers on the RIGHT half. Painterly richly textured high fantasy concept art, restrained cinematic detail, warm amber sunset and deep wine shadows. LEFT third darker trees and atmospheric negative space for website heading. No human medieval castle, no gothic church, no text or UI or watermark. Original artistic interpretation, not a screenshot."
+    },
+    {
+      "file": "assets/dathremar.webp",
+      "prompt": "Use case: stylized-concept. Vertical 2:3 painted portrait for a Warcraft Sunstrider dynasty archive. Dath'Remar Sunstrider, Highborne founder of Quel'Thalas, long pointed elven ears, swept long auburn and golden hair, dignified angular face, elaborate ivory and antique gold Highborne robes with crimson accents, blue arcane magic in background, gazing off to right, half-length portrait. Exquisite painterly fantasy illustration, visible brush texture, dramatic amber rim light, dark burgundy background, restrained colors, museum portrait framing but NO actual frame. Historically inspired artistic interpretation. No text, watermark or UI."
+    },
+    {
+      "file": "assets/anasterian.webp",
+      "prompt": "Use case: stylized-concept. Vertical 2:3 painted portrait for a Warcraft Sunstrider dynasty archive. King Anasterian Sunstrider, elderly high elf king, very long pale white hair, long pointed elven ears, angular aged face, blue eyes, slender gold crown and rich crimson robe with intricate gold armor and embroidery, one hand resting on a sword hilt, half-length portrait, solemn proud regal pose. Exquisite painterly fantasy illustration with visible brush texture, dramatic amber rim light against dark burgundy background, restrained colors, museum portrait framing but NO actual frame. Artistic interpretation. No text, watermark or UI."
+    },
+    {
+      "file": "assets/kaelthas.webp",
+      "prompt": "Use case: stylized-concept. Vertical 2:3 painted portrait of Kael'thas Sunstrider from Warcraft for a Sunstrider dynasty archive. Recognizable long straight blond hair, sharply arched long eyebrows, long pointed ears, glowing green eyes, ornate large crimson gold shoulder armor, high crimson collar, three small floating green magical spheres behind his head, proud conflicted expression, half-length portrait. Exquisite painterly fantasy illustration with visible brush texture, dramatic amber rim light on dark burgundy background, controlled emerald accents, restrained colors matching a museum portrait collection, NO actual frame. Original artistic interpretation. No text, watermark or UI."
+    }
+  ]
+}
